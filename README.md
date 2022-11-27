@@ -1,12 +1,25 @@
 # IoT data simulator
 This repository is an extension of Json Data Generator project with some minor changes:
-- improve configuation loading
-- handle Oauth autentication for MQTT
+- Improve configuation loading
+- Handle Oauth autentication for MQTT
 - WAMP protocol connection
+
 The project also contain a prototype of front-end user interface based on node.js
 
-## Running with Docker
+## Running the simulator
 
+The short way to run the simulator is to use Docker. See the docker-compose folder and run the default example that connects to Mosquitto online MQTT broker.
+
+    cd docker-compose
+    docker compose up
+
+The example uses due subfolder `conf` to read the simulation configuration.
+You can use a standard mosquitto tool to check if some messages are published. 
+For example, assuming you have mosquitto client installed locally, try to run the command belowe:
+
+    mosquitto_sub -h test.mosquitto.org -t "/sample.it/jz/device/#"
+
+You should see some JSON message produced according to `simple_Workflow.json` configuration.
 
 ## Json Data Generator
 
@@ -775,3 +788,17 @@ Which generates the following json:
         }]
 }
 ```
+
+## Generate a new docker image
+
+If you want to generate a new custom docker image, just compile and package the project:
+
+    mvn clean package
+    
+Then generate the image with:
+
+    docker build . -t YOUR_NEW_IMAGE
+
+To publish on Docker Hub use the following command (remember to login first on docker hub):
+
+    docker push YOUR_NEW_IMAGE
