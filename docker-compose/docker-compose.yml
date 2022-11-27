@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  json-generator:
+    image: docker.smartplatform.io/json-simulator:1.0.0
+    volumes:
+      - ./conf:/opt/app/json-data-generator-1.4.2-SNAPSHOT/conf
+    command: java -jar app.jar mypass_Simulator.json

@@ -1,0 +1,22 @@
+{
+  "workflows": [
+    {
+      "workflowName": "mypass_Workflow",
+      "workflowFilename": "mypass_Workflow.json"
+    }
+  ],
+  "producers": [
+    {
+      "type": "mqtt",
+      "broker.server": "wss://cloud.smartplatform.io",
+      "broker.port": 443,
+      "clientId": "SAFEClient",
+      "idp_token_url": "https://idp.smartplatform.io/auth/realms/sp/protocol/openid-connect/token",
+      "username": "admin@mypass@mypass",
+      "password": "ACCESS_TOKEN",
+      "client_id": "gateway-mypass",
+      "client_secret": "dd885a74-e90a-451d-b91e-ae62f5fa4bf2",
+      "grant_type": "client_credentials"
+    }
+  ]
+}
