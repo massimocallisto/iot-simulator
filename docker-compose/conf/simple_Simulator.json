@@ -8,7 +8,7 @@
   "producers": [
     {
       "type": "mqtt",
-      "broker.server": "mqtt://public.mqtthq.com",
+      "broker.server": "tcp://test.mosquitto.org",
       "broker.port": 1883,
       "clientId": "SAMPLEClient"
     }
