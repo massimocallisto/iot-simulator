@@ -9,7 +9,7 @@
       "duration": 0,
       "producerConfig": {
         "mqtt": {
-          "topic": "/mypass/jz/device/snapshot/0000/edv/0503"
+          "topic": "/sample.it/jz/device/snapshot/0000/edv/0503"
         }
       },
       "config": [
@@ -68,7 +68,7 @@
       "duration": 0,
       "producerConfig": {
         "mqtt": {
-          "topic": "/mypass/jz/device/snapshot/0000/edv/0502"
+          "topic": "/sample.it/jz/device/snapshot/0000/edv/0502"
         }
       },
       "config": [
@@ -127,7 +127,7 @@
       "duration": 0,
       "producerConfig": {
         "mqtt": {
-          "topic": "/mypass/jz/device/snapshot/0000/edv/0501"
+          "topic": "/sample.it/jz/device/snapshot/0000/edv/0501"
         }
       },
       "config": [
@@ -249,7 +249,7 @@
       "duration": 0,
       "producerConfig": {
         "mqtt": {
-          "topic": "/mypass/jz/device/snapshot/0000/edv/0504"
+          "topic": "/sample.it/jz/device/snapshot/0000/edv/0504"
         }
       },
       "config": [

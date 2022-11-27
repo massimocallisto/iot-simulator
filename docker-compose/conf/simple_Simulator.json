@@ -1,0 +1,16 @@
+{
+  "workflows": [
+    {
+      "workflowName": "mypass_Workflow",
+      "workflowFilename": "simple_Workflow.json"
+    }
+  ],
+  "producers": [
+    {
+      "type": "mqtt",
+      "broker.server": "mqtt://public.mqtthq.com",
+      "broker.port": 1883,
+      "clientId": "SAMPLEClient"
+    }
+  ]
+}

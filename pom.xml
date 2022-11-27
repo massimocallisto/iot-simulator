@@ -245,12 +245,7 @@
 		</repository>
 	</distributionManagement>
 	<build>
-		<resources>
-			<resource>
-				<directory>src/main/docker</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
+		<finalName>${project.name}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

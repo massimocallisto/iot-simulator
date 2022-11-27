@@ -1,3 +1,13 @@
+# IoT data simulator
+This repository is an extension of Json Data Generator project with some minor changes:
+- improve configuation loading
+- handle Oauth autentication for MQTT
+- WAMP protocol connection
+The project also contain a prototype of front-end user interface based on node.js
+
+## Running with Docker
+
+
 ## Json Data Generator
 
 <div style="text-align:center"><img src ="./src/design/logo.png" width="95%"/></div>
