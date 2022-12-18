@@ -19,7 +19,7 @@ For example, assuming you have mosquitto client installed locally, try to run th
 
     mosquitto_sub -h test.mosquitto.org -t "/sample.it/jz/device/#"
 
-You should see some JSON message produced according to `simple_Workflow.json` configuration.
+See `iot-simulator/docker-compose/conf` folder for the example configurartion.
 
 ## Json Data Generator
 
