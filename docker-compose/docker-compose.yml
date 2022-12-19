@@ -6,3 +6,9 @@ services:
     volumes:
       - ./conf:/opt/app/json-data-generator/conf
     command: java -jar json-data-generator.jar simple_Simulator.json
+  mosquitto:
+    image: eclipse-mosquitto
+    volumes:
+      - ./config/:/mosquitto/config/:ro
+    ports:
+      - '1883:1883'
