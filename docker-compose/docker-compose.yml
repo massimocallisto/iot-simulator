@@ -9,6 +9,6 @@ services:
   mosquitto:
     image: eclipse-mosquitto
     volumes:
-      - ./config/:/mosquitto/config/:ro
+      - ./mqtt-config/:/mosquitto/config/:ro
     ports:
       - '1883:1883'
